@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tabontabon Baseline</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/leaflet.css" rel="stylesheet" />
+    <link href="css/MarkerCluster.css" rel="stylesheet" />
+    <link href="css/MarkerCluster.Default.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div>
+          <a class="navbar-brand navbar-logo" href="#" target="_blank"><img class="prc-logo" src="img/PRC-logo.png"></a>
+          <a class="navbar-brand" href="http://www.redcross.org.ph/">Philippine Red Cross</a>
+          <a class="navbar-brand" href="#"><small>Household Profile Survey</small></a>
+        </div>
+      </div>
+    </div>    
+     
+    <div class="container-fluid">     
+      <div class="col-sm-8 col-map">
+        <button class="btn btn-sm btn-zoom" type="button" onClick="zoomOut();">Zoom to Extent</button> 
+        <div id="map"></div>
+      </div> <!-- /.col-sm-8 -->
+      <div class="col-sm-4">
+        <div id="infoWrapper">
+          <div class="infoText">
+            <div class="pageDescription">
+              Use the three buttons to toggle display types on and off. Color markers will display when a sector and question are open. Heatmap will display when a specific answer is clicked. Change the base map with the layer icon in the top-right corner of the map. <span id="totalSurveysCount"></span> surveys are on the map.
+            <br>
+            Please report any issues using <a href="https://github.com/PhilippineRedCross/leyte_hh-profile/issues" target="_blank">GitHub</a> or to <a href="mailto://daniel.joseph@ifrc.org">Dan Joseph</a>. 
+            </div>
+            <div>
+            <span id="mapTypeBtns">
+              <button id="markerBtn" type="button" class="btn btn-default btn-sm mapType active" onClick="toggleMapType(this)"><span class="glyphicon glyphicon-tint"></span> Color Markers</button>
+              <button id="heatMapBtn" type="button" class="btn btn-default btn-sm mapType active" onClick="toggleMapType(this)"><span class="glyphicon glyphicon-fire"></span> Heatmap</button>
+              <button id="emptiesBtn" type="button" class="btn btn-default btn-sm mapType active" onClick="toggleEmpties(this)"><span class="glyphicon glyphicon-map-marker"></span> Survey Points</button>
+            </span>        
+        
+          </div>
+  
+          </div>
+
+          
+
+
+          <div id="selectionMenu">  
+
+          </div>
+        </div>      
+      </div> <!-- /.col-sm-4 -->
+    </div> <!-- /.container-fluid -->
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/leaflet-heat.js"></script>
+    <script src="js/lookups.js"></script>
+    <script src="js/leaflet.markercluster-src.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+  </body>
+</html>
