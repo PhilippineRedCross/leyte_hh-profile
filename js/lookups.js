@@ -13,6 +13,21 @@ var color12 = [
 	"#ffed6f"
 ];
 
+var color12alt = [
+	"#a6cee3",
+	"#1f78b4",
+	"#b2df8a",
+	"#33a02c",
+	"#fb9a99",
+	"#e31a1c",
+	"#fdbf6f",
+	"#ff7f00",
+	"#cab2d6",
+	"#6a3d9a",
+	"#ffff99",
+	"#b15928"
+];
+
 
 // var array = []; 
 // $.each(surveyData, function(a,b){
@@ -26,7 +41,7 @@ var surveyQuestions = [
 	{
 	"id": "watersource",
 	"sector": "Water and Sanitation",
-	"textEnglish": "Where is the drinking water source located?",
+	"textEnglish": "Location of drinking water source?",
 	"answersEnglish": 
 		{
 		"handpumps": "hand pump",
@@ -40,7 +55,7 @@ var surveyQuestions = [
 	{
 	"id": "ownership",
 	"sector": "House and Land",
-	"textEnglish": "What is your ownership status?",
+	"textEnglish": "Ownership status?",
 	"answersEnglish":
 		{
 		"owned": "owned",
@@ -53,7 +68,7 @@ var surveyQuestions = [
 	{
 	"id": "housetype",
 	"sector": "House and Land",
-	"textEnglish": "What is the house type?",
+	"textEnglish": "House type?",
 	"answersEnglish":
 		{
 		"concrete": "concrete",
@@ -65,7 +80,7 @@ var surveyQuestions = [
 	{
 	"id": "premain",
 	"sector": "Livelihood",
-	"textEnglish": "What was your main employment pre-Yolanda?",
+	"textEnglish": "Main employment pre-Yolanda?",
 	"answersEnglish":
 		{
 		"farming": "farming",
@@ -84,7 +99,7 @@ var surveyQuestions = [
 	{
 	"id": "postmain",
 	"sector": "Livelihood",
-	"textEnglish": "What was your main employment post-Yolanda?",
+	"textEnglish": "Main employment post-Yolanda?",
 	"answersEnglish":
 		{
 		"farming": "farming",
@@ -98,6 +113,92 @@ var surveyQuestions = [
 		"privateemployment": "private employee",
 		"remittance": "remittance",
 		"others": "other"
+		}
+	},
+	{
+	"id": "qualified_assistance",
+	"sector": "Humanitarian Assistance",
+	"textEnglish": "Qualified assistance?",
+	"answersEnglish":
+		{
+		"coreshelter": "coreshelter",
+		"shelterrepair": "shelterrepair",
+		"livelihood": "livelihood",
+		"none": "none"
+		}
+	},
+	{
+	"id": "govtassistance",
+	"sector": "Humanitarian Assistance",
+	"textEnglish": "Government assistance?",
+	"answersEnglish":
+		{
+		"coreshelter": "coreshelter",
+		"shelterrepair": "shelterrepair",
+		"livelihood": "livelihood",
+		"shelterrepair none": "shelterrepair none",
+		"none": "none"
+		}
+	},
+	{
+	"id": "hmaritalstatus",
+	"sector": "House and Land",
+	"textEnglish": "Marital status?",
+	"answersEnglish":
+		{
+		"married": "married",
+		"widowed": "widowed",
+		"living_together": "living together",
+		"single": "single",
+		"annuled": "annuled"
+		}
+	},
+	{
+	"id": "terrain",
+	"sector": "House and Land",
+	"textEnglish": "Terrain?",
+	"answersEnglish":
+		{
+		"plains": "plains",
+		"plains highway": "plains highway",
+		"highway": "highway",
+		"urban": "urban",
+		"riverside": "riverside",
+		"highway urban": "highway urban",
+		"mountains": "mountains",
+		"others": "others"
+		}
+	},
+	{
+	"id": "sustaineddamage",
+	"sector": "Humanitarian Assistance",
+	"textEnglish": "Sustained damage?",
+	"answersEnglish":
+		{
+		"damaged": "damaged",
+		"destroyed": "destroyed"
+		}
+	},
+	{
+	"id": "residency",
+	"sector": "House and Land",
+	"textEnglish": "Residency?",
+	"answersEnglish":
+		{
+		"twelvemonth": "twelve months",
+		"sixmonths": "six months",
+		"twomonths": "two months",
+		"onemonth": "one month"
+		}
+	},
+	{
+	"id": "safe_water",
+	"sector": "Water and Sanitation",
+	"textEnglish": "Safe water?",
+	"answersEnglish": 
+		{
+		"yes": "yes",
+		"no": "no"
 		}
 	}
 ];
