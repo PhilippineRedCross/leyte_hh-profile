@@ -36,6 +36,9 @@ svg {
   background-color: #bdbdbd;
   display: inline-block;
 }
+.menu-sector, .question, .answer {
+  cursor: pointer;
+}
 .menu-hidden {
   display: none;
 }
