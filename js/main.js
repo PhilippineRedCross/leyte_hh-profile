@@ -141,6 +141,7 @@ function addQuestionToSection(questionObject) {
 function toggleMenuSector(sector){
   //clear map and whatnot
     Lmap.removeLayer(heatLayer);
+    markersColor.selectAll("circle").attr("fill", "none");
     $(document.body).find(".colorBox").css({backgroundColor: "#bdbdbd"});
     d3.selectAll(".answer").classed("heatMapped", false);
   var selectorString = "#" + sector;
