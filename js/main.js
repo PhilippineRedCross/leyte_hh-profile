@@ -1,3 +1,10 @@
+$(document).ready(function(){
+  $("#loading").remove();
+});
+var pageHeight = $(window).height();
+$("#loader").css("height", pageHeight * 0.75 );
+
+
 // setup Leaflet map
 var mapHeight = $(window).height() - 50;
 var mapBounds = [];

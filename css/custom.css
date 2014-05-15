@@ -9,6 +9,15 @@ body {
 svg {
   z-index: 9999;
 }
+#loading {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  text-align: center;
+}
+#loader{
+  height: 0px;
+}
 #totalSurveysCount {
   font-weight: bold;
   font-size: 115%;
