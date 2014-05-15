@@ -13,11 +13,14 @@ var color12 = [
 	"#ffed6f"
 ];
 
-// W14 has some with no answer because question may be N/A
-// W17 "88": "Other"  is actually just a blank in the data, SAME FOR SOME OTHERS!!!
-// H13... if there was an answer for "other" then added an 88 to list of answers
 
-// key for 1 answer or multi answer? add note into text?
+// var array = []; 
+// $.each(surveyData, function(a,b){
+//   if($.inArray(b.X, array) === -1){
+//     array.push(b.X);
+//   }
+// });
+// console.log(array);  
 
 var surveyQuestions = [
 	{
@@ -57,6 +60,44 @@ var surveyQuestions = [
 		"lightmaterials": "light materials",
 		"localmaterials": "local materials",
 		"wood": "wood"
+		}
+	},
+	{
+	"id": "premain",
+	"sector": "Livelihood",
+	"textEnglish": "What was your main employment pre-Yolanda?",
+	"answersEnglish":
+		{
+		"farming": "farming",
+		"fishing": "fishing",
+		"livestock": "livestock",
+		"caslabour": "casual labour",
+		"skilled": "skilled labour",
+		"agrilabour": "agricultural labour",
+		"pettytrade": "petty trade",
+		"govtemployment": "government employee",
+		"privateemployment": "private employee",
+		"remittance": "remittance",
+		"others": "other"
+		}
+	},
+	{
+	"id": "postmain",
+	"sector": "Livelihood",
+	"textEnglish": "What was your main employment post-Yolanda?",
+	"answersEnglish":
+		{
+		"farming": "farming",
+		"fishing": "fishing",
+		"livestock": "livestock",
+		"caslabour": "casual labour",
+		"skilled": "skilled labour",
+		"agrilabour": "agricultural labour",
+		"pettytrade": "petty trade",
+		"govtemployment": "government employee",
+		"privateemployment": "private employee",
+		"remittance": "remittance",
+		"others": "other"
 		}
 	}
 ];

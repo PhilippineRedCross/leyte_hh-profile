@@ -86,7 +86,7 @@ function d3Draw(){
     update();
     getSurveyExtent();
   })
-}    
+}
 
 function getSurveyExtent(){
   $(surveyData).each(function(aIndex, a){
