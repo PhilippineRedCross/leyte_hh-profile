@@ -166,7 +166,6 @@ function toggleQuestion(question, item){
   Lmap.removeLayer(heatLayer);
   d3.selectAll(".answer").classed("heatMapped", false);
   $(document.body).find(".colorBox").css({backgroundColor: "#bdbdbd"});
-  // d3.selectAll(".colorBox").style("background-color", "#bdbdbd");
   var selectorString = ".answer." + question;
   if($(item).hasClass("activeQuestion")){      
     $(item).removeClass("activeQuestion");
@@ -277,5 +276,24 @@ function showDisclaimer() {
     window.alert("The maps on this page do not imply the expression of any opinion on the part of the American Red Cross concerning the legal status of a territory or of its authorities.");
 }
 
+// get count of markers visible in current map extent
+Lmap.on('moveend', function(){
+  var visibleMarkers = 0;
+  var newBounds = Lmap.getBounds();
+  var northernLat = newBounds._northEast.lat;
+  var easternLng = newBounds._northEast.lng;
+  var southernLat = newBounds._southWest.lat;
+  var westernLng = newBounds._southWest.lng;
+  $.each(surveyData, function(aIndex, a){
+    if(a._location_latitude < northernLat && 
+      a._location_latitude > southernLat &&
+      a._location_longitude < easternLng &&
+      a._location_longitude > westernLng){
+        visibleMarkers += 1;
+    }
+  });
+  $("#visibleSurveysCount").html(visibleMarkers.toString());
+})
 
+//initialize function chain
 d3Draw();
