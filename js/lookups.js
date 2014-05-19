@@ -54,20 +54,20 @@ var surveyQuestions = [
 	},
 	{
 	"id": "ownership",
-	"sector": "House and Land",
+	"sector": "House and Tenure",
 	"textEnglish": "Ownership status?",
 	"answersEnglish":
 		{
 		"owned": "owned",
-		"others": "others",
-		"rented": "rented",
 		"familyowned": "family owned",
-		"public": "public"	
+		"rented": "rented",
+		"public": "public",	
+		"others": "others"
 		}
 	},
 	{
 	"id": "housetype",
-	"sector": "House and Land",
+	"sector": "House and Tenure",
 	"textEnglish": "House type?",
 	"answersEnglish":
 		{
@@ -127,22 +127,49 @@ var surveyQuestions = [
 		"none": "none"
 		}
 	},
-	// {
-	// "id": "govtassistance",
-	// "sector": "Humanitarian Assistance",
-	// "textEnglish": "Government assistance?",
-	// "answersEnglish":
-	// 	{
-	// 	"coreshelter": "coreshelter",
-	// 	"shelterrepair": "shelterrepair",
-	// 	"livelihood": "livelihood",
-	// 	"shelterrepair none": "shelterrepair none",
-	// 	"none": "none"
-	// 	}
-	// },
+	{
+	"id": "govtassistance_shelterrepair",
+	"sector": "Humanitarian Assistance",
+	"textEnglish": "Government assistance - Shelter Repair",
+	"answersEnglish":
+		{
+		"TRUE": "Yes",
+		"FALSE": "No"
+		}
+	},
+	{
+	"id": "govtassistance_coreshelter",
+	"sector": "Humanitarian Assistance",
+	"textEnglish": "Government assistance - Core Shelter",
+	"answersEnglish":
+		{
+		"TRUE": "Yes",
+		"FALSE": "No"
+		}
+	},
+	{
+	"id": "govtassistance_livelihood",
+	"sector": "Humanitarian Assistance",
+	"textEnglish": "Government assistance - Livelihood",
+	"answersEnglish":
+		{
+		"TRUE": "Yes",
+		"FALSE": "No"
+		}
+	},
+	{
+	"id": "govtassistance_none",
+	"sector": "Humanitarian Assistance",
+	"textEnglish": "No Government assistance",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
 	{
 	"id": "hmaritalstatus",
-	"sector": "House and Land",
+	"sector": "House and Tenure",
 	"textEnglish": "Marital status?",
 	"answersEnglish":
 		{
@@ -150,25 +177,81 @@ var surveyQuestions = [
 		"widowed": "widowed",
 		"living_together": "living together",
 		"single": "single",
-		"annuled": "annuled"
+		"annuled": "annuled",
+		"separated": "separated",
+		"others": "other"
 		}
 	},
-	// {
-	// "id": "terrain",
-	// "sector": "House and Land",
-	// "textEnglish": "Terrain?",
-	// "answersEnglish":
-	// 	{
-	// 	"plains": "plains",
-	// 	"plains highway": "plains highway",
-	// 	"highway": "highway",
-	// 	"urban": "urban",
-	// 	"riverside": "riverside",
-	// 	"highway urban": "highway urban",
-	// 	"mountains": "mountains",
-	// 	"others": "others"
-	// 	}
-	// },
+	{
+	"id": "terrain_riverside",
+	"sector": "Terrain",
+	"textEnglish": "Riverside",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
+	{
+	"id": "terrain_beach",
+	"sector": "Terrain",
+	"textEnglish": "Beach",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
+	{
+	"id": "terrain_mountains",
+	"sector": "Terrain",
+	"textEnglish": "Mountains",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
+	{
+	"id": "terrain_plains",
+	"sector": "Terrain",
+	"textEnglish": "Plains",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
+	{
+	"id": "terrain_highway",
+	"sector": "Terrain",
+	"textEnglish": "Highway",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
+	{
+	"id": "terrain_urban",
+	"sector": "Terrain",
+	"textEnglish": "Urban",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
+	{
+	"id": "terrain_others",
+	"sector": "Terrain",
+	"textEnglish": "Others",
+	"answersEnglish":
+		{
+		"TRUE": "True",
+		"FALSE": "False"
+		}
+	},
 	{
 	"id": "sustaineddamage",
 	"sector": "Humanitarian Assistance",
@@ -181,7 +264,7 @@ var surveyQuestions = [
 	},
 	{
 	"id": "residency",
-	"sector": "House and Land",
+	"sector": "House and Tenure",
 	"textEnglish": "Residency?",
 	"answersEnglish":
 		{
