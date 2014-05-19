@@ -127,19 +127,19 @@ var surveyQuestions = [
 		"none": "none"
 		}
 	},
-	{
-	"id": "govtassistance",
-	"sector": "Humanitarian Assistance",
-	"textEnglish": "Government assistance?",
-	"answersEnglish":
-		{
-		"coreshelter": "coreshelter",
-		"shelterrepair": "shelterrepair",
-		"livelihood": "livelihood",
-		"shelterrepair none": "shelterrepair none",
-		"none": "none"
-		}
-	},
+	// {
+	// "id": "govtassistance",
+	// "sector": "Humanitarian Assistance",
+	// "textEnglish": "Government assistance?",
+	// "answersEnglish":
+	// 	{
+	// 	"coreshelter": "coreshelter",
+	// 	"shelterrepair": "shelterrepair",
+	// 	"livelihood": "livelihood",
+	// 	"shelterrepair none": "shelterrepair none",
+	// 	"none": "none"
+	// 	}
+	// },
 	{
 	"id": "hmaritalstatus",
 	"sector": "House and Land",
@@ -153,22 +153,22 @@ var surveyQuestions = [
 		"annuled": "annuled"
 		}
 	},
-	{
-	"id": "terrain",
-	"sector": "House and Land",
-	"textEnglish": "Terrain?",
-	"answersEnglish":
-		{
-		"plains": "plains",
-		"plains highway": "plains highway",
-		"highway": "highway",
-		"urban": "urban",
-		"riverside": "riverside",
-		"highway urban": "highway urban",
-		"mountains": "mountains",
-		"others": "others"
-		}
-	},
+	// {
+	// "id": "terrain",
+	// "sector": "House and Land",
+	// "textEnglish": "Terrain?",
+	// "answersEnglish":
+	// 	{
+	// 	"plains": "plains",
+	// 	"plains highway": "plains highway",
+	// 	"highway": "highway",
+	// 	"urban": "urban",
+	// 	"riverside": "riverside",
+	// 	"highway urban": "highway urban",
+	// 	"mountains": "mountains",
+	// 	"others": "others"
+	// 	}
+	// },
 	{
 	"id": "sustaineddamage",
 	"sector": "Humanitarian Assistance",
