@@ -62,7 +62,7 @@ var markersEmpty = svg.append('g').attr("id", "markersEmpty");
 
 
 function d3Draw(){  
-  d3.json("data/HouseholdProfileForm_2014_06_02.json", function(data) {
+  d3.json("data/HouseholdProfileForm_2014_06_23.json", function(data) {
     surveyData = data;
     /* Add a LatLng object to each item in the dataset */
     data.forEach(function(d) {
